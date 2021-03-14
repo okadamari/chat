@@ -1,10 +1,11 @@
 <template>
-  <router-view />
+  ログイン
 </template>
+
 <script>
 
 export default {
-  name: 'app',
+  name: 'login',
 }
 </script>
 

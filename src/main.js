@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import firebase from 'firebase'
 import App from './App.vue'
+import router from './router' //追加
 
 const config = {
   apiKey: process.env.VUE_APP_API_KEY,
@@ -13,5 +14,5 @@ const config = {
 };
 
 firebase.initializeApp(config);
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
 
