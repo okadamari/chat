@@ -2,16 +2,16 @@
   <form class="signin" onsubmit="return false">
     <table>
         <tr>
-          <th>メールアドレス：</th>
+          <th><label for="email">メールアドレス</label></th>
         </tr>
         <tr>
-          <td><input type="email" v-model="mailaddress"/></td>
+          <td><input type="email" id="email" name="email" autocomplete="email" v-model="mailaddress" /></td>
         </tr>
         <tr>
-          <th>パスワード：</th>
+          <th><label for="password">パスワード</label></th>
         </tr>
         <tr>
-          <td><input type="password" v-model="password"/></td>
+          <td><input type="password" id="password" name="password" autocomplete="current-password" v-model="password" /></td>
         </tr>
       </table>
       <button @click="login">ログイン</button>
