@@ -1,5 +1,5 @@
 <template>
-  <div class="signin">
+  <form class="signin" onsubmit="return false">
     <table>
         <tr>
           <th>メールアドレス：</th>
@@ -15,7 +15,7 @@
         </tr>
       </table>
       <button @click="login">ログイン</button>
-  </div>
+  </form>
 </template>
 
 <script>
