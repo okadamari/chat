@@ -1,4 +1,5 @@
 <template>
+  <h1>ログイン</h1>
   <form class="signin" onsubmit="return false">
     <table>
         <tr>
